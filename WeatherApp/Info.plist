@@ -49,5 +49,7 @@
 		<string>cosmicgirl.ttf</string>
 		<string>avengerchromeital.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We would like to get your location to provide you with accurate weather details.</string>
 </dict>
 </plist>
