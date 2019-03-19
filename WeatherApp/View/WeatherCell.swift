@@ -23,7 +23,7 @@ class WeatherCell: UITableViewCell {
         weatherTypeLbl.text = forcasts.weatherType
         highTempLbl.text = "\(forcasts.highTemp)°"
         lowTempLbl.text = "\(forcasts.lowTemp)°"
-        WeatherIcon.image = UIImage(named: forcasts.weatherType )
+        WeatherIcon.image = UIImage(named: "\(forcasts.weatherType) Mini" )
         let image = UIImage(named: forcasts.date )
         self.backgroundView = UIImageView(image: image)
     }
