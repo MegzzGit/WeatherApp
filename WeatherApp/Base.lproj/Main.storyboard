@@ -27,12 +27,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-aK-G2z">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-aK-G2z" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="fLY-GM-3eF"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" image="bg2-1"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-uR-rre" userLabel="Left Stack">
                                 <rect key="frame" x="20" y="15.666666666666657" width="165.66666666666666" height="240"/>
@@ -129,7 +128,6 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.62191080729166659" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="DPC-yz-ZWa" firstAttribute="leading" secondItem="t5t-lD-xmM" secondAttribute="trailing" constant="20" id="5tV-iP-vMg"/>
                                                 <constraint firstItem="P1m-8l-2UH" firstAttribute="top" secondItem="t5t-lD-xmM" secondAttribute="top" id="FbL-AF-GbN"/>
@@ -171,6 +169,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="yQ7-aK-G2z" id="sty-Ah-dYL"/>
                         <outlet property="cityLbl" destination="BZS-f1-iCy" id="MhB-Xv-eqD"/>
                         <outlet property="dateLbl" destination="7hS-Zw-dU1" id="w8X-5E-2el"/>
                         <outlet property="tableView" destination="X8X-qX-yfm" id="Z0e-8z-5fF"/>
@@ -188,6 +187,5 @@
         <image name="Clear" width="120" height="112"/>
         <image name="Clear Mini" width="36" height="34"/>
         <image name="bg2" width="420" height="280"/>
-        <image name="bg2-1" width="354" height="233"/>
     </resources>
 </document>

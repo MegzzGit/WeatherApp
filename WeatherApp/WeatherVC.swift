@@ -12,6 +12,7 @@ import CoreLocation
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var tempLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
@@ -141,7 +142,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "tableViewBg"))
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
             let forcasts = forcastArr[indexPath.row]
             cell.ConfigureCell(forcasts: forcasts)
@@ -154,11 +157,17 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     
     func updateMainUI(){
         
-            dateLbl.text = currentWeather.date
-            cityLbl.text = currentWeather.cityName
-            weatherTypeLbl.text = currentWeather.weatherType
-            tempLbl.text = "\(currentWeather.currentTemp)°"
-            weathertypeicon.image = UIImage(named: currentWeather.weatherType)
+        dateLbl.text = currentWeather.date
+        cityLbl.text = currentWeather.cityName
+        weatherTypeLbl.text = currentWeather.weatherType
+        tempLbl.text = "\(currentWeather.currentTemp)°"
+        weathertypeicon.image = UIImage(named: currentWeather.weatherType)
+            
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd"
+        let today = dateFormatter.string(from: Date())
+        backgroundImage.image = UIImage(named: today)
+        
     }
     
     
