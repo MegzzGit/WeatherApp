@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,101 +10,113 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="IronMan.ttf">
+            <string>IRONMANOFWAR001ANCV</string>
+        </array>
+        <array key="IronMan2.ttf">
+            <string>IRONMANOFWAR001BNCV</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--WeatherVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-aK-G2z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="yQ7-aK-G2z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="fLY-GM-3eF"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" image="bg2-1"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="48.5" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-uR-rre" userLabel="Left Stack">
-                                <rect key="frame" x="20" y="15" width="184" height="241"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-uR-rre" userLabel="Left Stack">
+                                <rect key="frame" x="20" y="15.666666666666657" width="165.66666666666666" height="240"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" March 24, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="7hS-Zw-dU1">
-                                        <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.98985994170000002" green="0.98985994170000002" blue="0.98985994170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" March 24, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hS-Zw-dU1">
+                                        <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="35"/>
+                                        <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="Ti4-V0-skN">
-                                        <rect key="frame" x="0.0" y="78.5" width="184" height="84"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <color key="textColor" red="0.98985994170984459" green="0.98985994170984459" blue="0.98985994170984459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="70" width="165.66666666666666" height="100"/>
+                                        <fontDescription key="fontDescription" name="IRONMANOFWAR001ANCV" family="IRON MAN OF WAR 001A NCV" pointSize="100"/>
+                                        <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cairo, El katamya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-f1-iCy">
-                                        <rect key="frame" x="0.0" y="211" width="184" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.98985994170000002" green="0.98985994170000002" blue="0.98985994170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cairo, El katamya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-f1-iCy">
+                                        <rect key="frame" x="0.0" y="205" width="165.66666666666666" height="35"/>
+                                        <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="35"/>
+                                        <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-To-Vdj" userLabel="Right Stack">
-                                <rect key="frame" x="180" y="73" width="120" height="182"/>
+                                <rect key="frame" x="274" y="68" width="120" height="187"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-vn-YTg">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="112"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-Cp-auB">
-                                        <rect key="frame" x="43.5" y="152" width="76.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgs-Cp-auB">
+                                        <rect key="frame" x="0.0" y="152" width="120" height="35"/>
+                                        <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="35"/>
                                         <color key="textColor" red="0.98985994170000002" green="0.98985994170000002" blue="0.98985994170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="kgs-Cp-auB" firstAttribute="centerX" secondItem="wP8-vn-YTg" secondAttribute="centerX" id="PIr-Wd-hXR"/>
+                                </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X8X-qX-yfm" userLabel="tableView">
-                                <rect key="frame" x="0.0" y="270" width="320" height="298"/>
+                                <rect key="frame" x="0.0" y="270" width="414" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.67020939089999998" green="0.67020939089999998" blue="0.67020939089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="95" id="71m-lm-Kvg" customClass="WeatherCell" customModule="WeatherApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="95"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71m-lm-Kvg" id="CzN-7p-ZST">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DPC-yz-ZWa">
-                                                    <rect key="frame" x="108" y="11" width="53.5" height="66"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DPC-yz-ZWa" userLabel="LeftStack">
+                                                    <rect key="frame" x="108" y="11" width="69.666666666666686" height="74"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-mX-4BA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-mX-4BA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="69.666666666666671" height="32"/>
+                                                            <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="32"/>
+                                                            <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-3b-ILQ">
-                                                            <rect key="frame" x="0.0" y="45.5" width="53.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KxT-3b-ILQ">
+                                                            <rect key="frame" x="0.0" y="42" width="69.666666666666671" height="32"/>
+                                                            <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="32"/>
+                                                            <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="P1m-8l-2UH">
-                                                    <rect key="frame" x="229.5" y="11" width="35.5" height="68"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P1m-8l-2UH" userLabel="RightStack">
+                                                    <rect key="frame" x="328" y="11" width="31" height="74"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="usQ-ms-N0w">
-                                                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="26.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                            <color key="textColor" red="0.98985994170000002" green="0.98985994170000002" blue="0.98985994170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="31" height="32"/>
+                                                            <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="32"/>
+                                                            <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xMH-2L-NDM">
-                                                            <rect key="frame" x="0.0" y="41.5" width="35.5" height="26.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="0.0" y="42" width="31" height="32"/>
+                                                            <fontDescription key="fontDescription" name="IRONMANOFWAR001BNCV" family="IRON MAN OF WAR 001B NCV" pointSize="32"/>
+                                                            <color key="textColor" white="0.92998589409999999" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
                                                     </subviews>
@@ -152,6 +164,7 @@
                             <constraint firstItem="X8X-qX-yfm" firstAttribute="top" secondItem="yQ7-aK-G2z" secondAttribute="bottom" id="Qfw-Sd-Tdy"/>
                             <constraint firstItem="X8X-qX-yfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YU6-Rh-vyU"/>
                             <constraint firstItem="l0N-uR-rre" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d9z-RS-Rbk"/>
+                            <constraint firstItem="ws2-To-Vdj" firstAttribute="leading" secondItem="l0N-uR-rre" secondAttribute="trailing" constant="88" id="dOu-wi-xgz"/>
                             <constraint firstItem="X8X-qX-yfm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jVl-gg-G7B"/>
                             <constraint firstItem="l0N-uR-rre" firstAttribute="centerY" secondItem="yQ7-aK-G2z" secondAttribute="centerY" id="tQy-Es-DWV"/>
                         </constraints>
@@ -173,7 +186,8 @@
     </scenes>
     <resources>
         <image name="Clear" width="120" height="112"/>
-        <image name="Clear Mini" width="35" height="32"/>
-        <image name="bg" width="497" height="300"/>
+        <image name="Clear Mini" width="36" height="34"/>
+        <image name="bg2" width="420" height="280"/>
+        <image name="bg2-1" width="354" height="233"/>
     </resources>
 </document>

@@ -46,8 +46,9 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>cosmicgirl.ttf</string>
-		<string>avengerchromeital.ttf</string>
+		<string>AvengerFont.otf</string>
+		<string>IronMan.ttf</string>
+		<string>IronMan2.ttf</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We would like to get your location to provide you with accurate weather details.</string>

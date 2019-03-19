@@ -157,7 +157,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             dateLbl.text = currentWeather.date
             cityLbl.text = currentWeather.cityName
             weatherTypeLbl.text = currentWeather.weatherType
-            tempLbl.text = "\(currentWeather.currentTemp)"
+            tempLbl.text = "\(currentWeather.currentTemp)°"
             weathertypeicon.image = UIImage(named: currentWeather.weatherType)
     }
     
